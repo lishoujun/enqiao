@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+  <display-name>Enqiao Navigation</display-name>
+  <filter>
+    <filter-name>Set Character Encoding</filter-name>
+    <filter-class> cn.enqiao.util.SetCharacterEncodingFilter</filter-class>
+    <init-param>
+      <param-name>encoding</param-name>
+      <param-value>UTF-8</param-value>
+    </init-param>
+    <init-param>
+      <param-name>ignore</param-name>
+      <param-value>true</param-value>
+    </init-param>
+  </filter>
+  <filter-mapping>
+    <filter-name>Set Character Encoding</filter-name>
+    <servlet-name>*.jsp</servlet-name>
+  </filter-mapping>
+  <filter-mapping>
+    <filter-name>Set Character Encoding</filter-name>
+    <servlet-name>action</servlet-name>
+  </filter-mapping>
+  <filter-mapping>
+    <filter-name>Set Character Encoding</filter-name>
+    <servlet-name>*</servlet-name>
+  </filter-mapping>
+  <servlet>
+    <display-name>Welcome to Enqiao!</display-name>
+    <servlet-name>job</servlet-name>
+    <servlet-class>cn.enqiao.business.job</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>job</servlet-name>
+    <url-pattern>/job</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <display-name>Welcome to Enqiao!</display-name>
+    <servlet-name>bige</servlet-name>
+    <servlet-class>cn.enqiao.jiecao.bige</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>bige</servlet-name>
+    <url-pattern>/bige</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <display-name>Welcome to Enqiao!</display-name>
+    <servlet-name>showlinks</servlet-name>
+    <servlet-class>cn.enqiao.nav.Showlinks</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>showlinks</servlet-name>
+    <url-pattern>/showlinks</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <display-name>Welcome to Enqiao!</display-name>
+    <servlet-name>bg</servlet-name>
+    <servlet-class>cn.enqiao.nav.bg</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>bg</servlet-name>
+    <url-pattern>/bg</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <display-name>Welcome to Enqiao!</display-name>
+    <servlet-name>clickadd</servlet-name>
+    <servlet-class>cn.enqiao.nav.ClickAdd</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>clickadd</servlet-name>
+    <url-pattern>/clickadd</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <display-name>Welcome to Enqiao!</display-name>
+    <servlet-name>linkadd</servlet-name>
+    <servlet-class>cn.enqiao.nav.LinkAdd</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>linkadd</servlet-name>
+    <url-pattern>/linkadd</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <display-name>Welcome to Enqiao!</display-name>
+    <servlet-name>showtopic</servlet-name>
+    <servlet-class>cn.enqiao.nav.Showtopic</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>showtopic</servlet-name>
+    <url-pattern>/showtopic</url-pattern>
+  </servlet-mapping>
+  <listener>
+    <listener-class>cn.enqiao.util.testtimer</listener-class>
+  </listener>
+  <servlet>
+    <description></description>
+    <display-name>ValiImg</display-name>
+    <servlet-name>ValiImg</servlet-name>
+    <servlet-class>cn.enqiao.util.ValiImg</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ValiImg</servlet-name>
+    <url-pattern>/ValiImg</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>TestPath</display-name>
+    <servlet-name>TestPath</servlet-name>
+    <servlet-class>cn.enqiao.util.TestPath</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>TestPath</servlet-name>
+    <url-pattern>/TestPath/ii</url-pattern>
+  </servlet-mapping>
+</web-app>

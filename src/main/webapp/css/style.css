@@ -1,0 +1,43 @@
+body {
+	font-size: 17px;
+}
+
+#wa {
+	color: #ffffff;
+	text-decoration: none
+}
+
+#w {
+	color: #3ab9fe;
+	//font-weight: bold;
+	text-decoration: none
+}
+
+#doc-title {
+	text-indent: 1cm;
+	letter-spacing: 20px;
+	color: red;
+	font-weight: bold
+}
+
+#doc-head {
+	height: 90px;
+	width: 800px;
+	border: red solid thin;
+}
+
+.top {
+	text-shadow: 5px 5px 5px #444444;
+	font-weight: bold;
+}
+
+#main {
+	/*  div相对页面居中，宽度1024  内容与边框20px  */
+	width: 1024px;
+	margin: 0 auto;
+	border: solid 5px #ffffff;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
